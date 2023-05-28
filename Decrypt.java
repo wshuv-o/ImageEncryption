@@ -1,0 +1,88 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+public class Decrypt {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader("numbers.csv"));
+        String original = reader.readLine();
+        reader.close();
+
+        original = original.replace(">",",1");
+        original = original.replace("Q",",2");
+        original = original.replace("_",",3");
+        original = original.replace("^",",4");
+        original = original.replace("w",",5");
+        original = original.replace("\\",",6");
+        original = original.replace("[",",7");
+        original = original.replace("@",",8");
+        original = original.replace("?",",9");
+        original = original.replace("=","69");
+        original = original.replace("<","68");
+        original = original.replace(";","67");
+        original = original.replace(":","66");
+        original = original.replace("~","65");
+        original = original.replace("`","64");
+        original = original.replace("|","63");
+        original = original.replace("{","62");
+        original = original.replace("Z","61");
+        original = original.replace("Y","60");
+        original = original.replace("X","59");
+        original = original.replace("W","58");
+        original = original.replace("V","57");
+        original = original.replace("U","56");
+        original = original.replace("T","55");
+        original = original.replace("S","54");
+        original = original.replace("R","53");
+        original = original.replace("}","52");
+        original = original.replace("P","51");
+        original = original.replace("O","50");
+        original = original.replace("N","49");
+        original = original.replace("M","48");
+        original = original.replace("L","47");
+        original = original.replace("K","46");
+        original = original.replace("I","45");
+        original = original.replace("J","44");
+        original = original.replace("H","43");
+        original = original.replace("G","42");
+        original = original.replace("F","41");
+        original = original.replace("E","40");
+        original = original.replace("D","39");
+        original = original.replace("C","38");
+        original = original.replace("B","37");
+        original = original.replace("A","36");
+        original = original.replace("z","35");
+        original = original.replace("y","34");
+        original = original.replace("x","33");
+        original = original.replace("]","32");
+        original = original.replace("v","31");
+        original = original.replace("u","30");
+        original = original.replace("t","29");
+        original = original.replace("s","28");
+        original = original.replace("r","27");
+        original = original.replace("q","26");
+        original = original.replace("p","25");
+        original = original.replace("o","24");
+        original = original.replace("n","23");
+        original = original.replace("m","22");
+        original = original.replace("i","21");
+        original = original.replace("l","20");
+        original = original.replace("k","19");
+        original = original.replace("j","18");
+        original = original.replace("h","17");
+        original = original.replace("g","16");
+        original = original.replace("f","15");
+        original = original.replace("e","14");
+        original = original.replace("d","13");
+        original = original.replace("c","12");
+        original = original.replace("b","11");
+        original = original.replace("a","10");
+                        
+BufferedWriter writer = new BufferedWriter(new FileWriter("numbers.csv"));
+writer.write(original);
+writer.close();
+
+    }
+}
